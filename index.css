@@ -501,7 +501,7 @@ form h1 {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
     .header, #landing, #about, #service, #contact, .footer {
         margin: 0 1em;
     }
