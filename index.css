@@ -524,7 +524,7 @@ form h1 {
     }
 
     section {
-        padding: 2em 0;
+        padding: 5em 0;
     }
 
     h1 {
@@ -543,7 +543,7 @@ form h1 {
     .landing-button {
         display: flex;
         flex-direction: column;
-        row-gap: 0.6vw;
+        row-gap: 2vw;
     }
 
     .btn {
@@ -563,7 +563,7 @@ form h1 {
     }
 
     .service-header h1::before {
-        top: -7vw;
+        top: -4vw;
     }
 
     .service-header > div {
@@ -600,7 +600,7 @@ form h1 {
     }
 
     .contact-header h1::before {
-        top: -7vw;
+        top: -4vw;
     }
 
     form h1 {
