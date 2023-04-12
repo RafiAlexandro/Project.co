@@ -391,7 +391,7 @@ form h1 {
     gap: 16px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .header, #landing, #about, #service, #contact, .footer {
         margin: 0 6em;
     }
@@ -405,7 +405,7 @@ form h1 {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .header, #landing, #about, #service, #contact, .footer {
         margin: 0 4em;
     }
@@ -477,7 +477,7 @@ form h1 {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .header h1 {
         font-size: 1.1em;
     }
@@ -501,7 +501,7 @@ form h1 {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
     .header, #landing, #about, #service, #contact, .footer {
         margin: 0 1em;
     }
