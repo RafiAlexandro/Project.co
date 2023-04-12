@@ -63,6 +63,10 @@ p {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
 }
 
+.btn:focus {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
+}
+
 .btn-alt {
     background-color: white;
     color: #FFC108;
@@ -164,6 +168,7 @@ nav > a:hover {
     align-items: center;
     justify-content: space-between;
     margin: 0 10em;
+    column-gap: 1em;
 }
 
 #about > div {
@@ -295,11 +300,15 @@ form h1 {
 
 .contact-location {
     margin-top: 32px;
-     
 }
 
 .contact-location h1 {
     font-size: 32px;
+}
+
+.contact-location iframe {
+    width: 100%;
+    height: 82%;
 }
 
 .form-group {
@@ -479,5 +488,163 @@ form h1 {
 
     .service-header div {
         width: 60%;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .contact-location iframe {
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .header, #landing, #about, #service, #contact, .footer {
+        margin: 0 1em;
+    }
+
+    .header {
+        justify-content: space-around;
+        padding: 1em 0;
+    }
+
+    .header > a {
+        display: none;
+    }
+
+    nav > a {
+        font-size: 5vw;
+        margin: 0;
+        padding: 0 0.6em;
+    }
+
+    section {
+        padding: 2em 0;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    p {
+        font-size: 5vw;
+        line-height: 1.5em;
+    }
+
+    .landing-title h1 {
+        line-height: 1.6em;
+    }
+
+    .landing-button {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.6vw;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+
+    .btn-alt {
+        margin: 0;
+    }
+
+    #about-stats {
+        grid-template-columns: none;
+    }
+
+    .about-stats-item > h1 {
+        font-size: 2em;
+    }
+
+    .service-header h1::before {
+        top: -7vw;
+    }
+
+    .service-header > div {
+        flex-grow: 1;
+    }
+
+    .service-header > a  {
+        display: none;
+        width: 0;
+    }
+
+    .service-detail {
+        grid-template-columns: none;
+        margin-top: 4vh;
+        width: 100%;
+    }
+
+    .service-detail-item {
+        width: auto;
+    }
+
+    .service-detail-item h2 {
+        font-size: 1.1em;
+        margin-top: 6vw;
+    }
+
+    .service-detail-item p {
+        font-size: 0.9em;
+    }
+
+    .service-detail-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-header h1::before {
+        top: -7vw;
+    }
+
+    form h1 {
+        font-size: 1.2em;
+    }
+
+    .input-group label {
+        font-size: 1em;
+    }
+
+    .input-group input {
+        font-size: 1em;
+    }
+
+    .btn-submit {
+        height: 5vh;
+    }
+
+    .contact-location h1 {
+        font-size: 1.2em;
+    }
+
+    .contact-location iframe {
+        height: 24vh;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer h1 {
+        font-size: 1.2em;
+    }
+
+    .footer p {
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    .social-icon {
+        gap: 3vw;
+        margin-top: 1vh;
+    }
+
+    .social-icon img {
+        width: 8vw;
     }
 }
